@@ -1,9 +1,11 @@
 const express = require('express')
-const {getAllCars} =require("../connections/getResponses.js") 
+const {getAllCars , getCarByName , searchCars} =require("../connections/getResponses.js") 
 
 
 const router = express.Router()
 
 router.get('/' ,  getAllCars)
+router.get("/search", searchCars);
+router.get('/:name' , getCarByName)
 
 module.exports = router;

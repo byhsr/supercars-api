@@ -15,7 +15,8 @@ app.use(cors());
 
 
 //routing middlwarre
-app.use("/api/supercars" , carRoutes)
+app.use("/api/supercars" , carRoutes);
+
 
 
 //connection
